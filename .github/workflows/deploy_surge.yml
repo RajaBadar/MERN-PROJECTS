@@ -29,9 +29,9 @@ jobs:
       - name: Install NodeJS
         uses: actions/setup-node@v3
         with: 
-             node-version:16
+             node-version: 16.15.1
       - name: Install Surge
         run: npm install -g surge
       - name: Run Surge
-        run: surge ./ GITHUB_FINDER.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./github-finder/ GITHUB_FINDER.surge.sh --token ${{secrets.SURGE_TOKEN}}
  

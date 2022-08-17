@@ -31,7 +31,7 @@ jobs:
         with: 
              node-version : 16
       - name: Install Surge
-        run: npm Install -g surge
+        run: npm install -g surge
         
       - name: Run Surge
         run: surge ./ MERNPROJECT.surge.sh --token ${{secrets.SURGE_TOKEN}}

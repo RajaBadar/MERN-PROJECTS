@@ -34,5 +34,5 @@ jobs:
         run: npm Install -g surge
         
       - name: Run Surge
-        run: surge ./ MERNPROJECT.surge.sh --token ${{secret.SURGE_TOKEN}}
+        run: surge ./ MERNPROJECT.surge.sh --token ${{secrets.SURGE_TOKEN}}
 

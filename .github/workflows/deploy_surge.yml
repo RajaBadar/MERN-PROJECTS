@@ -31,7 +31,7 @@ jobs:
         with: 
              node-version: 16.15.1
       - name: Install Surge
-        run: npm install -g surge
+        run: npm install -global surge
       - name: Run Surge
-        run: surge ./github-finder/ GITHUB_FINDER1122.surge.sh --token ${{secrets.SURGE_TOKEN}}
+        run: surge ./build github-finder/ GITHUB_FINDER1122.surge.sh --token ${{secrets.SURGE_TOKEN}}
  
